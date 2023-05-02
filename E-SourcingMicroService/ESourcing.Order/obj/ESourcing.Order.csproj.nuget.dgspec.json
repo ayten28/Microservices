@@ -37,8 +37,8 @@
               "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Application\\Ordering.Application.csproj": {
                 "projectPath": "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Application\\Ordering.Application.csproj"
               },
-              "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-                "projectPath": "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
+              "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
               }
             }
           }
@@ -53,6 +53,12 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -307,14 +313,14 @@
         }
       }
     },
-    "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+    "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectUniqueName": "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "projectName": "Ordering.Infrastructure",
-        "projectPath": "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectPath": "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\huseynzadea\\.nuget\\packages\\",
-        "outputPath": "D:\\ProjectsAyten\\Microservices\\Ordering.Infrastructure\\obj\\",
+        "outputPath": "D:\\ProjectsAyten\\Microservices\\E-SourcingMicroService\\Ordering.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -351,6 +357,12 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
             },

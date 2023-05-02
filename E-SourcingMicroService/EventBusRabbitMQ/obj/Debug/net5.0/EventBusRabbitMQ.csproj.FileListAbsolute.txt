@@ -7,6 +7,6 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\EventBusRabbitMQ.AssemblyInfo.cs
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\EventBusRabbitMQ.csproj.CoreCompileInputs.cache
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\EventBusRabbitMQ.dll
-D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\ref\EventBusRabbitMQ.dll
-D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\EventBusRabbitMQ.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\refint\EventBusRabbitMQ.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\EventBusRabbitMQ.pdb
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\EventBusRabbitMQ\obj\Debug\net5.0\ref\EventBusRabbitMQ.dll

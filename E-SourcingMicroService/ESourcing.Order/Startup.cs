@@ -1,4 +1,5 @@
 using ESourcing.Order.Consumers;
+using ESourcing.Order.Extensions;
 using EventBusRabbitMQ;
 using EventBusRabbitMQ.Producer;
 using Microsoft.AspNetCore.Builder;
@@ -40,6 +41,8 @@ namespace ESourcing.Order
             #region Add Application
             services.AddApplication();
             #endregion
+
+            services.AddAutoMapper(typeof(Startup));
 
             #region Swagger Dependanies
             services.AddSwaggerGen(c =>
@@ -94,7 +97,7 @@ namespace ESourcing.Order
                 endpoints.MapControllers();
             });
 
-            app.UseAuthorization();
+            app.UseRabbitListener();
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
