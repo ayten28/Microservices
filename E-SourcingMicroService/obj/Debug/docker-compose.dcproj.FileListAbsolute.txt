@@ -12,6 +12,12 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.runtimeconfig.json
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.runtimeconfig.dev.json
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.exe
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.deps.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.runtimeconfig.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.runtimeconfig.dev.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ocelot.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.exe
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Products.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Esourcing.Sourcing.dll
@@ -33,6 +39,7 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Ordering.Domain.
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.EntityFrameworkCore.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Newtonsoft.Json.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Ocelot.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\MongoDB.Libmongocrypt.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\DnsClient.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\SharpCompress.dll
@@ -44,10 +51,16 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\MediatR.Extensio
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.AspNetCore.MiddlewareAnalysis.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Newtonsoft.Json.Bson.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Products.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Esourcing.Sourcing.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.Order.pdb
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\ESourcing.APIGateway.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\EventBusRabbitMQ.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Ordering.Infrastructure.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\bin\Debug\Ordering.Application.pdb

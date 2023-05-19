@@ -1,5 +1,38 @@
 name: dockercompose2305220315116418689
 services:
+  esourcing.apigateway:
+    build:
+      context: D:\ProjectsAyten\Microservices\E-SourcingMicroService
+      dockerfile: ESourcing.APIGateway\Dockerfile
+    container_name: esourcingapigateway
+    depends_on:
+      esourcing.order:
+        condition: service_started
+      esourcing.products:
+        condition: service_started
+      esourcing.sourcing:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: esourcingapigateway
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5000"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /.microsoft/usersecrets/
+      target: /root/.microsoft/usersecrets
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /.aspnet/https
+      target: /root/.aspnet/https
+      bind:
+        create_host_path: true
   esourcing.order:
     build:
       context: D:\ProjectsAyten\Microservices\E-SourcingMicroService
@@ -13,7 +46,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectioStrings:OrderConnection: Server=sourcingsqldb;Database=OrderDb;User
-        Id=sa;Password=Odb12345678
+        Id=SA;Password=Odb12345678
       EventBus:HostName: rabbitmq
     image: esourcingorder
     networks:
@@ -31,7 +64,7 @@ services:
         create_host_path: true
     - type: bind
       source: /.aspnet/https
-      target: root/.aspnet/https
+      target: /root/.aspnet/https
       bind:
         create_host_path: true
   esourcing.products:

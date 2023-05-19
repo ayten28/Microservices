@@ -1,0 +1,12 @@
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\bin\Debug\net5.0\ESourcing.Core.deps.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\bin\Debug\net5.0\ESourcing.Core.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\bin\Debug\net5.0\ESourcing.Core.pdb
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.csproj.AssemblyReference.cache
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.AssemblyInfoInputs.cache
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.AssemblyInfo.cs
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.csproj.CoreCompileInputs.cache
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\refint\ESourcing.Core.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ESourcing.Core.pdb
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Core\obj\Debug\net5.0\ref\ESourcing.Core.dll

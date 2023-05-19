@@ -57,8 +57,8 @@ services:
   esourcing.order:
     container_name: esourcingorder
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectioStrings:OrderConnection=Server=sourcingsqldb;Database=OrderDb;User Id=sa;Password=Odb12345678"
+      - "ASPNETCORE_ENVIRONMENT=Development"
+      - "ConnectioStrings:OrderConnection=Server=sourcingsqldb;Database=OrderDb;User Id=SA;Password=Odb12345678"
       - "EventBus:HostName=rabbitmq"
     depends_on:
       - sourcingsqldb
