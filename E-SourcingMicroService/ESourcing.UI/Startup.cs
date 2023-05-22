@@ -4,6 +4,7 @@ using ESourcing.Core.Repositories.Base;
 using ESourcing.Infrastructure.Data;
 using ESourcing.Infrastructure.Repository;
 using ESourcing.Infrastructure.Repository.Base;
+using ESourcing.UI.Clients;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -74,6 +75,11 @@ namespace ESourcing.UI
             //    opt.Password.RequireUppercase = false;
             //    opt.Password.RequireDigit = false;
             //}).AddDefaultTokenProviders().AddEntityFrameworkStores<WebAppContext>();
+            services.AddHttpClient();
+
+            services.AddHttpClient<ProductClient>();
+            services.AddHttpClient<AuctionClient>();
+            //services.AddHttpClient<BidClient>();
 
         }
 

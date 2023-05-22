@@ -38,3 +38,5 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Deb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Debug\net5.0\ESourcing.Products.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Debug\net5.0\ESourcing.Products.genruntimeconfig.cache
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Debug\net5.0\ref\ESourcing.Products.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Debug\net5.0\ESourcing.Products.Properties.Resources.resources
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Products\obj\Debug\net5.0\ESourcing.Products.csproj.GenerateResource.cache

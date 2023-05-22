@@ -1,4 +1,4 @@
-﻿@*@model AuctionBidsViewModel*@
+﻿@model AuctionBidsViewModel
 
 @{
     ViewData["Title"] = "Detail";
@@ -30,9 +30,9 @@
         <div class="card-header" style="background-color:darkgray">
             <h3 class="card-title">Active RFQ Detail</h3>
         </div>
-@*        @Html.HiddenFor(x => x.AuctionId)
+        @Html.HiddenFor(x => x.AuctionId)
         @Html.HiddenFor(x => x.ProductId)
-        @Html.HiddenFor(x => x.SellerUserName)*@
+        @Html.HiddenFor(x => x.SellerUserName)
         <div class="card-body">
             <table id="exampleAuction" class="table table-bordered table-hover">
                 <thead>
@@ -60,5 +60,5 @@
 <button type="submit" id="finishButton" class="btn btn-primary">Finish RFQ</button>
 
 <script src="~/lib/microsoft-signalr/signalr.js"></script>
-@*<script src="~/js/Views/RFQ/detail.js"></script>*@
+<script src="~/js/Views/RFQ/detail.js"></script>
 <script src="~/detail.js"></script>

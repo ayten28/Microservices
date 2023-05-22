@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Esourcing.Sourcing.Hubs;
 
 namespace Esourcing.Sourcing
 {
@@ -55,6 +56,7 @@ namespace Esourcing.Sourcing
                 s.SwaggerDoc("v1", new OpenApiInfo { Title = "ESourcing.Sourcing", Version = "v1" });
             });
             #endregion
+
             #region EventBus
             services.AddSingleton<IRabbitMQPersistentConnection>(sp => {
                 var logger = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
@@ -82,6 +84,8 @@ namespace Esourcing.Sourcing
             
             services.AddSingleton<EventBusRabbitMQProducer>();
             #endregion
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -98,6 +102,7 @@ namespace Esourcing.Sourcing
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<AuctionHub>("/auctionhub");
                 endpoints.MapControllers();
             });
 
