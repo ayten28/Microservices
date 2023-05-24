@@ -13,3 +13,6 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\o
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\obj\Debug\net5.0\refint\ESourcing.Infrastructure.dll
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\obj\Debug\net5.0\ESourcing.Infrastructure.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\obj\Debug\net5.0\ref\ESourcing.Infrastructure.dll
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\bin\Debug\net5.0\ESourcing.Infrastructure.runtimeconfig.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\bin\Debug\net5.0\ESourcing.Infrastructure.runtimeconfig.dev.json
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.Infrastructure\obj\Debug\net5.0\ESourcing.Infrastructure.genruntimeconfig.cache

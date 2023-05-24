@@ -85,6 +85,15 @@ namespace Esourcing.Sourcing
             services.AddSingleton<EventBusRabbitMQProducer>();
             #endregion
 
+            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
+              {
+                  builder.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader()
+                      .AllowCredentials()
+                      .WithOrigins("http://localhost:18258");
+              }));
+
             services.AddSignalR();
         }
 
@@ -99,6 +108,7 @@ namespace Esourcing.Sourcing
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

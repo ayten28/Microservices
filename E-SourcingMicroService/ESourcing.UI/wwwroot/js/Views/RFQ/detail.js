@@ -14,3 +14,61 @@ connection.start().then(function () {
 }).catch(function (err) {
     return console.error(err.toString());
 })
+
+connection.on("Bids", function (user, bid) {
+    addBidToTable(user, bid);
+});
+
+document.getElementById("sendButton").addEventListener("click", function (event) {
+
+    var user = document.getElementById("SellerUserName").value;
+    var productId = document.getElementById("ProductId").value;
+    var seller = user
+    var bid = document.getElementById("exampleInputPrice").value;
+
+    var sendBidRequest = {
+        AuctionId: auctionId,
+        ProductId: productId,
+        SellerUserName: sellerUser,
+        Price: parseFloat(bid).toString()
+    }
+
+    SendBid(sendBidRequest);
+    event.preventDefault();
+
+});
+
+
+function addBidToTable(user, bid) {
+    var str = "<tr>";
+    str += "<td>" + user + "</td>";
+    str += "<td>" + bid + "</td>";
+    str += "</tr>";
+
+    if ($('table > tbody> tr:first').length > 0) {
+        $('table > tbody> tr:first').before(str);
+    } else {
+        $('.bidLine').append(str);
+    }
+
+}
+
+function SendBid(model) {
+    $.ajax({
+
+        url: "/Auction/SendBid",
+        type: "POST",
+        data: model,
+        success: function (response) {
+            if (response.isSuccess) {
+                document.getElementById("exampleInputPrice").value = "";
+                connection.invoke("SendBidAsync", groupName, model.SellerUserName, model.Price).catch(function (err) {
+                    return console.error(err.toString());
+                });
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+}

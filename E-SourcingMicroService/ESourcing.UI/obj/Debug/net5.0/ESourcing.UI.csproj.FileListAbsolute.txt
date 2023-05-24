@@ -9,7 +9,6 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\ESourcing.UI.RazorAssemblyInfo.cs
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\appsettings.Development.json
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\appsettings.json
-D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\ESourcing.UI.StaticWebAssets.xml
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\ESourcing.UI.exe
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\ESourcing.UI.deps.json
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\ESourcing.UI.runtimeconfig.json
@@ -417,7 +416,6 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\ESourcing.Core.pdb
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\scopedcss\bundle\ESourcing.UI.styles.css
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\staticwebassets\ESourcing.UI.StaticWebAssets.Manifest.cache
-D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\staticwebassets\ESourcing.UI.StaticWebAssets.xml
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\ESourcing.UI.TagHelpers.input.cache
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\ESourcing.UI.TagHelpers.output.cache
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\ESourcing.UI.RazorCoreGenerate.cache
@@ -439,3 +437,4 @@ D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\Razor\Views\Auction\Index.cshtml.g.cs
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\Razor\Views\Auction\Create.cshtml.g.cs
 D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\obj\Debug\net5.0\Razor\Views\Auction\Detail.cshtml.g.cs
+D:\ProjectsAyten\Microservices\E-SourcingMicroService\ESourcing.UI\bin\Debug\net5.0\libman.json

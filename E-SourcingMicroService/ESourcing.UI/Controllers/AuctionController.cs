@@ -1,6 +1,7 @@
 ﻿using ESourcing.Core.Repositories;
 using ESourcing.UI.Clients;
 using ESourcing.UI.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,13 +14,16 @@ namespace ESourcing.UI.Controllers
         private readonly IUserRepository _userRepository;
         private readonly ProductClient _productClient;
         private readonly AuctionClient _auctionClient;
+        private readonly BidClient _bidClient;
 
         public AuctionController(IUserRepository userRepository,
-             ProductClient productClient, AuctionClient auctionClient)
+             ProductClient productClient, AuctionClient auctionClient,
+             BidClient bidClient)
         {
             _userRepository = userRepository;
             _productClient = productClient;
             _auctionClient = auctionClient;
+            _bidClient = bidClient;
         }
         public async Task<IActionResult> IndexAsync()
         {
@@ -55,8 +59,20 @@ namespace ESourcing.UI.Controllers
             return View(model);
         }
 
-        public IActionResult Detail() 
+        public async Task<IActionResult> Detail(string id) 
         {
+            AuctionBidsViewModel model = new AuctionBidsViewModel();
+
+            var auctionResponse = await _auctionClient.GetAuctionById(id);
+            var bidsResponse = await _bidClient.GelAllBidsByAuctionId(id);
+
+            model.SellerUserName = HttpContext.User?.Identity.Name;
+            model.AuctionId = auctionResponse.Data.Id;
+            model.ProductId = auctionResponse.Data.ProductId;
+            model.Bids = bidsResponse.Data;
+            var isAdmin = HttpContext.Session.GetString("IsAdmin");
+            model.IsAdmin = Convert.ToBoolean(isAdmin);
+
             return View();
         }
     }
