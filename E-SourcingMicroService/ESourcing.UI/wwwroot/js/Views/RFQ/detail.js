@@ -21,19 +21,26 @@ connection.on("Bids", function (user, bid) {
 
 document.getElementById("sendButton").addEventListener("click", function (event) {
 
-    var user = document.getElementById("SellerUserName").value;
-    var productId = document.getElementById("ProductId").value;
-    var seller = user
-    var bid = document.getElementById("exampleInputPrice").value;
+    //var user = document.getElementById("SellerUserName").value;
+    //var productId = document.getElementById("ProductId").value;
+    //var seller = user
+    //var bid = document.getElementById("exampleInputPrice").value;
 
-    var sendBidRequest = {
+    //var sendBidRequest = {
+    //    AuctionId: auctionId,
+    //    ProductId: productId,
+    //    SellerUserName: sellerUser,
+    //    Price: parseFloat(bid).toString()
+    //}
+
+    //SendBid(sendBidRequest);
+    //event.preventDefault();
+
+    var sendCompleteBidRequets = {
         AuctionId: auctionId,
-        ProductId: productId,
-        SellerUserName: sellerUser,
-        Price: parseFloat(bid).toString()
     }
 
-    SendBid(sendBidRequest);
+    SendCompleteBid(sendCompleteBidRequets);
     event.preventDefault();
 
 });
@@ -65,6 +72,25 @@ function SendBid(model) {
                 connection.invoke("SendBidAsync", groupName, model.SellerUserName, model.Price).catch(function (err) {
                     return console.error(err.toString());
                 });
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+}
+
+function SendCompleteBid(model) {
+    var id = auctionId;
+    $.ajax({
+
+        url: "/Auction/CompleteBid",
+        type: "POST",
+        data: { id: id },
+
+        success: function (response) {
+            if (response.isSuccess) {
+                console.log("Is success");
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {

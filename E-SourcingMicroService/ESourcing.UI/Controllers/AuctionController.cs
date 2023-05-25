@@ -1,4 +1,5 @@
 ﻿using ESourcing.Core.Repositories;
+using ESourcing.Core.ResultModels;
 using ESourcing.UI.Clients;
 using ESourcing.UI.ViewModel;
 using Microsoft.AspNetCore.Http;
@@ -48,6 +49,18 @@ namespace ESourcing.UI.Controllers
         }
 
         [HttpPost]
+        public async Task<IActionResult> Create(AuctionViewModel model)
+        {
+            model.Status = 0;
+            model.CreatedAt = DateTime.Now;
+            model.IncludedSellers.Add(model.SellerId);
+            var createAuction = await _auctionClient.CreateAuction(model);
+            if (createAuction.IsSuccess)
+                return RedirectToAction("Index");
+            return View(model);
+        }
+
+        [HttpPost]
         public async Task<IActionResult> CreateAsync(AuctionViewModel model)
         {
             model.Status = 0;
@@ -74,6 +87,21 @@ namespace ESourcing.UI.Controllers
             model.IsAdmin = Convert.ToBoolean(isAdmin);
 
             return View();
+        }
+
+        [HttpPost]
+        public async Task<Result<string>> SendBid(BidViewModel model) 
+        {
+            model.CreateAt = DateTime.Now;
+            var sendBidResponse = await _bidClient.SendBid(model);
+            return sendBidResponse;
+        }
+
+        [HttpPost]
+        public async Task<Result<string>> CompleteBid(string id)
+        {
+            var completeBidResponse = await _auctionClient.CompleteBid(id);
+            return completeBidResponse;
         }
     }
 }
